@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f8f4;
+  color: #1f2d1f;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+/* ---------- Landing page ---------- */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+}
+
+.landing-page.fade-out {
+  display: none;
+}
+
+/* Background image for the Paradise Nursery landing page */
+.background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.55);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  max-width: 1200px;
+  color: #fff;
+}
+
+.landing_content {
+  flex: 1 1 340px;
+  text-align: center;
+}
+
+.landing_content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #4caf50;
+  margin: 0 auto 16px;
+}
+
+.landing_content p {
+  font-size: 1.3rem;
+  margin-bottom: 28px;
+}
+
+.get-started-button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.get-started-button:hover {
+  background: #388e3c;
+}
+
+.aboutus_container {
+  flex: 1 1 400px;
+}
+
+.about-us-container {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 28px;
+  border-radius: 10px;
+}
+
+.about-us-description {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #a5d6a7;
+  margin-bottom: 14px;
+}
+
+.about-us-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* ---------- Product list container ---------- */
+.product-list-container {
+  display: none;
+}
+
+.product-list-container.visible {
+  display: block;
+}
